@@ -18,9 +18,12 @@ Your users should be able to:
 
 ### Solution
 
-<div align="center">
+<div style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;gap: 5px;">
   <img src="./images/mobile_view.png" alt="Mobile View" />
-   <img src="./images/desktop_view.png" alt="Desktop view" />
+   <img src="./images/desktop_view.png" alt="Desktop view" style="max-width: 600px; object-fit: cover; width: 100%"/>
 </div>
 
 
