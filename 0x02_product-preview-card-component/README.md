@@ -4,9 +4,9 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## The challenge
 
-Your challenge is to build out this product preview card component and get it looking as close to the design as possible.
+Your challenge is to build out this product preview card component and get it to look as close to the design as possible.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a try.
 
 Your users should be able to:
 
@@ -18,12 +18,9 @@ Your users should be able to:
 
 ### Solution
 
-<div style="
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;gap: 5px;">
+<div align=center>
   <img src="./images/mobile_view.png" alt="Mobile View" />
-   <img src="./images/desktop_view.png" alt="Desktop view" style="max-width: 600px; object-fit: cover; width: 100%"/>
+   <img src="./images/desktop_view.png" alt="Desktop view" />
 </div>
 
 
@@ -39,14 +36,14 @@ Your users should be able to:
 - Mobile-first workflow
 - media queries
 
-
+style="max-width: 600px; object-fit: cover; width: 100%"
 ### Key Learning
 
 In this specific project, I acquired proficiency in employing CSS media queries to ensure webpage responsiveness, adapting gracefully to various screen sizes and devices
 
 The `@media` at-rule, also known as a media query, is used to conditionally apply CSS. Media queries are commonly used to apply CSS based on the viewport width using the max-width and min-width properties.
 
-In the below example the padding is applied to the .card class when the viewport is 960px wide and below.
+In the below example, the padding is applied to the .card class when the viewport is 960px wide and below.
 
 ```css
 .@media (max-width: 960px) {
