@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'HakenGrotesk';
+    src: url('./assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HakenGrotesk';
+    src: url('./assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HakenGrotesk';
+    src: url('./assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+}
+
+
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: "HakenGrotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* max-width: 430px; */
+    margin: 0 auto;
+}
+
+.summary-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, hsl(250, 61%, 57%) 0%, hsl(241, 81%, 54%) 100%);
+    border-radius: 0 0 30px 30px;
+    padding: 1.7em;
+
+
+
+}
+
+.summary-header #score h1 {
+    font-size: 55px;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+#score p {
+    gap: 10;
+    margin-top: -10px;
+}
+
+#score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+}
+
+.summary-header h2 {
+    margin-bottom: .6em;
+    margin-top: 3px;
+    font-weight: 500;
+
+}
+
+.summary-header>p {
+    margin-top: 0;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.score-card:nth-child(2) {
+    margin-top: -15px;
+}
+
+.score>p {
+    color: hsl(224, 30%, 27%);
+    font-weight: 600;
+}
+
+.gray-out {
+    color: hsl(224, 30%, 27%, 0.3);
+}
+
+.light-white {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+#summary-body {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: hsl(224, 30%, 27%);
+    margin: 0 1em 0 1em;
+    padding: 0.3em;
+    font-weight: 500;
+}
+
+.score-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.2rem;
+    border-radius: 10px;
+}
+
+
+.score-name {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.red {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+.green {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.yellow {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%)
+}
+
+.blue {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%)
+}
+
+
+#btn {
+    font-family: inherit;
+    font-weight: 500;
+    padding: 15px 0;
+    font-size: 18px;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+}
+
+
+@media (min-width: 680px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        max-width: 700px;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 30px;
+
+        max-height: 500px;
+
+        box-shadow: 6px 6px 17px rgb(202, 202, 202);
+    }
+
+    .summary-header,
+    #summary-body {
+        width: 50%;
+    }
+
+    #summary-body {
+        padding: 1.5em;
+    }
+    .summary-header {
+        border-radius: 30px;
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+
+    }
+
+    #btn:hover {
+        background: linear-gradient(180deg, hsl(250, 61%, 57%) 0%, hsl(241, 81%, 54%) 100%);;
+    }
+}
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: black;
+}
+
+.attribution a {
+    color: hsl(213, 19%, 35%);
+    border-radius: 100%;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
