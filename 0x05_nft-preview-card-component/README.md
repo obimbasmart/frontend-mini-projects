@@ -31,7 +31,7 @@ Users should be able to:
 
 ### What I learned
 
-This project further went ahead to enforce my learning and understanding of CSS flexbox and how to center elements. What I love about this project was the right use of colors. Fun fact: it took me `1hr:30min` to complete the challenge
+This project deepened my grasp of CSS flexbox and the art of centering elements. One aspect I particularly enjoyed was the skillful application of colors. As a fun tidbit, it took me precisely 1 hour and 30 minutes to conquer this challenge.
 
 ## Author
 [Obimba Smart](https://github.com/obimbasmart/)
