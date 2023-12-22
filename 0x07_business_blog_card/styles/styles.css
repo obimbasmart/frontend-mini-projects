@@ -1,0 +1,122 @@
+
+body {
+    /* background-color: black; */
+    font-family: 'Lato', sans-serif;
+    background-color: #F2F5F9;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+.root-container {
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 1rem;
+}
+
+.card,
+#hero {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.img-ctn {
+    max-width: 100%;
+    margin: 0;
+}
+
+.blog-img {
+    width: 100%;
+}
+#hero {
+    margin-bottom: -3.8rem;
+}
+#overlay{
+    margin-bottom: 0;
+}
+
+hgroup.description {
+    border-bottom: 1px solid #c9d2dd;
+    padding-bottom: 1rem;
+}
+hgroup.description,
+.staff{
+    padding-left: 1.8rem;
+}
+hgroup.description  h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: -2rem;
+    font-size: 24px;
+    margin-top: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    width: 80%;
+}
+hgroup.description  p {
+    margin-top: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 0;
+    color: #677489;
+}
+
+.staff {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 1rem;    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.staff img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border-style: groove;
+    border: 5px solid rgb(216, 214, 214);
+    border-style: double;
+}
+
+.staff .title {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.staff .title .name {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.staff .title p.title {
+    margin-top: 2px;
+    color: #677489;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #677489;
+}
