@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+/* Add some styles for body */
+body {
+    font-family: 'Sora', sans-serif;
+    line-height: 1.5;
+    
+
+}
+
+main.root {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 250, 244);
+    min-width: 100%;
+    padding: 1.2rem;
+    height: 100vh;
+}
+
+.logo img {
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 9px 6px 50px 3px rgb(247, 201, 96) inset,
+-20px 0px 10px -20px rgba(0,0,0,0.45) inset;
+    border-radius: 1.5rem;
+    padding: .5rem;
+    
+}
+
+ul.checklists {
+    margin-top: 1.6rem;
+    font-size: 0.875rem;
+}
+li.check{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    margin-bottom: .6rem;
+
+}
+
+li.check img {
+    padding: 0;
+    padding-right: 5px;
+    margin: 0;
+    align-self: baseline;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.card-container {
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 5rem;
+
+}
+
+.card:first-child {
+    align-self: flex-end;
+}
+.card:nth-child(2) {
+    align-self: flex-start;
+}
+.card .rating {
+    margin-bottom: .5rem;
+}
+.card {
+    /* width: 80%; */
+    max-width: 25rem;
+    background-color: #ffffff;
+    padding: 1.2rem 1.7rem;
+    border-radius: 13px;
+    box-shadow: 6px 13px 50px -25px rgba(0,0,0,0.25);
+}
+
+.card h3 {
+    font-size: 1.25rem;
+}
+.card img:first-child {
+    width: 5rem;
+}
+
+.card p {
+    line-height: 1.8rem;
+}
+
+
+@media screen and (min-width: 1000px) {
+    main.root {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 0 10rem;
+        flex-direction: row;
+        font-size: 1.6rem;
+        /* background-color: red; */
+    }
+    body {
+        font-size: 1.25rem;
+    }
+    .card {
+        width: 50%;
+        min-width: 25rem;
+    }
+
+
+  }
